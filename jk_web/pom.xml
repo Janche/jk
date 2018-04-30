@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>cn.itcast.jk</groupId>
+		<artifactId>jk_parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>jk_web</artifactId>
+	<packaging>war</packaging>
+	<name>jk_web</name>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>cn.itcast.jk</groupId>
+			<artifactId>jk_service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- Apache Shiro 权限架构 -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-all</artifactId>
+			<version>${shiro.version}</version>
+		</dependency>
+		<!-- 为了解决找不到BlockJUnit4ClassRunner类 -->
+		<!--<dependency>-->
+			<!--<groupId>org.hamcrest</groupId>-->
+			<!--<artifactId>hamcrest-core</artifactId>-->
+			<!--<version>1.3</version>-->
+			<!--<scope>test</scope>-->
+		<!--</dependency>-->
+	</dependencies>
+
+	<build>
+		<finalName>jk_web</finalName>
+	</build>
+</project>

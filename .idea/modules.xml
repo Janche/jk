@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jk_dao/jk_dao.iml" filepath="$PROJECT_DIR$/jk_dao/jk_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jk_domain/jk_domain.iml" filepath="$PROJECT_DIR$/jk_domain/jk_domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jk_exception/jk_exception.iml" filepath="$PROJECT_DIR$/jk_exception/jk_exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jk_parent.iml" filepath="$PROJECT_DIR$/jk_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jk_service/jk_service.iml" filepath="$PROJECT_DIR$/jk_service/jk_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jk_utils/jk_utils.iml" filepath="$PROJECT_DIR$/jk_utils/jk_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jk_web/jk_web.iml" filepath="$PROJECT_DIR$/jk_web/jk_web.iml" />
+    </modules>
+  </component>
+</project>

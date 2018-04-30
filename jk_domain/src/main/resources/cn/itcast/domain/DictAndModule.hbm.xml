@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.itcast.domain">
+	<class name="DictAndModule" table="DICT_MODULE_P">
+		<!--主键-->
+		<id name="id" column="TID">
+			<generator class="uuid"></generator>
+		</id>
+		<property name="moduleId" column="MODULE_ID"></property>
+		<property name="roleId" column="ROLE_ID"></property>
+		<property name="dictId" column="DICT_ID"></property>
+	</class>
+</hibernate-mapping>

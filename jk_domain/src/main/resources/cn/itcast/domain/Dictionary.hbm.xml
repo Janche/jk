@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.itcast.domain">
+   <class name="Dictionary" table="DICT_P">
+      <id name="did" column="DICT_ID">
+         <generator class="uuid"></generator>
+      </id>
+      <property name="description" column="DESCRIPTION"></property>
+      <property name="dictype" column="DICTYPE"></property>
+      <property name="name" column="NAME"></property>
+      <property name="val" column="VAL"></property>
+     
+   <!--   private Set<Module>modules = new HashSet<Module>();  多对多-->
+	<set name="modules" table="DICT_MODULE_P">
+		<key column="DICT_ID"></key>
+		<many-to-many class="Module" column="MODULE_ID"/>
+	</set>  
+	
+	<!-- private Set<Role> roles = new HashSet<Role>(0); --> 
+  	<set name="roles" table="DICT_MODULE_P">
+		<key column="DICT_ID"></key>
+		<many-to-many class="Role" column="ROLE_ID"/>
+	</set>
+  	
+   </class>
+</hibernate-mapping>
