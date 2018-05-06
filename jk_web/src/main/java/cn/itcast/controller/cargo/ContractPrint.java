@@ -31,7 +31,8 @@ public class ContractPrint{
 
 	public void print(Contract contract, String path, HttpServletResponse response) throws Exception{
 		//相同厂家的信息一起打印
-		Set<ContractProduct> oList = contract.getContractProducts();
+		Set<ContractProduct> set = contract.getContractProducts();
+		List<ContractProduct> oList = new ArrayList<>(set);
 		UtilFuns utilFuns = new UtilFuns();
 		String tempXlsFile = path + "make/xlsprint/tCONTRACT.xls";		//获取模板文件
 		
@@ -47,7 +48,7 @@ public class ContractPrint{
 		
 		String oldFactory = "";
 		for(int i=0;i<oList.size();i++){
-			oProduct = oList.iterator().next();	//获得货物
+			oProduct = oList.get(i);	//获得货物
 			pageMap = new HashMap();	//每页的内容
 			
 			pageMap.put("Offeror", "收 购 方：" + contract.getOfferor());
@@ -77,7 +78,7 @@ public class ContractPrint{
 			if(contract.getPrintStyle().equals("2")){
 				i++;	//读取第二个货物信息
 				if(i<oList.size()){
-					oProduct = oList.iterator().next();
+					oProduct = oList.get(i);
 					
 					if(oProduct.getFactory().getFactoryName().equals(oldFactory)){	//厂家不同另起新页打印，除去第一次的比较
 						

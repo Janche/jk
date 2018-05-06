@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<description>定时任务的配置</description>
+
+	<!--定义一个任务类-->
+	<bean id="job" class="cn.itcast.controller.job.TestJob"/>
+
+	<bean id="mailJob" class="cn.itcast.controller.job.MailJob"/>
+
+	<!--定义一个任务对象-->
+	<bean id="methodInvoking" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<!--<property name="targetObject" ref="job"/>-->
+		<!--<property name="targetMethod" value="run"/>-->
+		<property name="targetObject" ref="mailJob"/>
+		<property name="targetMethod" value="send"/>
+	</bean>
+
+	<!--定义一个触发器-->
+	<bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail" ref="methodInvoking"/>
+		<property name="cronExpression" value="0 42 23 * * ? *"/>
+ 	</bean>
+
+	<!--定义一个总调度器-->
+	<bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="cronTrigger"/>
+			</list>
+		</property>
+	</bean>
+</beans>
