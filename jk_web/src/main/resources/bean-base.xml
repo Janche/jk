@@ -34,7 +34,12 @@
 		<property name="dataSource" ref="dataSource"></property>
 		<property name="configLocation" value="classpath:hibernate.cfg.xml"></property>
 	</bean>
-	
+
+	<!-- jdbcTemplate模板配置-->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+
 	<!--Shiro安全框架产生代理子类的方式： 使用cglib方式-->
 	<aop:aspectj-autoproxy proxy-target-class="true" />
 	
