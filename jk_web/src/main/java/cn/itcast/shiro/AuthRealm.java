@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import cn.itcast.service.RoleService;
 import org.apache.log4j.Logger;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
@@ -61,7 +60,7 @@ public class AuthRealm extends AuthorizingRealm{
 				}
 			}
 		}
-		System.out.println(list);
+		System.out.println("list:"+list);
 		SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
 		info.addStringPermissions(list);
 		
