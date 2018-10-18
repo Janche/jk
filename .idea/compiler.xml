@@ -2,27 +2,6 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <option name="BUILD_PROCESS_HEAP_SIZE" value="1500" />
-    <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="jk_dao" />
-        <module name="jk_domain" />
-        <module name="jk_exception" />
-        <module name="jk_service" />
-        <module name="jk_utils" />
-        <module name="jk_web" />
-      </profile>
-    </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
-      <module name="jk_dao" target="1.8" />
-      <module name="jk_domain" target="1.8" />
-      <module name="jk_exception" target="1.8" />
-      <module name="jk_parent" target="1.5" />
-      <module name="jk_service" target="1.8" />
-      <module name="jk_utils" target="1.8" />
-      <module name="jk_web" target="1.8" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8" />
   </component>
 </project>

@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/jk_dao/jk_dao.iml" filepath="$PROJECT_DIR$/jk_dao/jk_dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jk_domain/jk_domain.iml" filepath="$PROJECT_DIR$/jk_domain/jk_domain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jk_exception/jk_exception.iml" filepath="$PROJECT_DIR$/jk_exception/jk_exception.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jk_parent.iml" filepath="$PROJECT_DIR$/jk_parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jk_service/jk_service.iml" filepath="$PROJECT_DIR$/jk_service/jk_service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jk_utils/jk_utils.iml" filepath="$PROJECT_DIR$/jk_utils/jk_utils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jk_web/jk_web.iml" filepath="$PROJECT_DIR$/jk_web/jk_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jk_utils/src/main/main.iml" filepath="$PROJECT_DIR$/jk_utils/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jk_exception/src/main/main1.iml" filepath="$PROJECT_DIR$/jk_exception/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jk_domain/src/main/main2.iml" filepath="$PROJECT_DIR$/jk_domain/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jk_service/src/main/main3.iml" filepath="$PROJECT_DIR$/jk_service/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jk_web/src/main/main4.iml" filepath="$PROJECT_DIR$/jk_web/src/main/main4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jk_dao/src/main/main5.iml" filepath="$PROJECT_DIR$/jk_dao/src/main/main5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jk_web/src/test/test.iml" filepath="$PROJECT_DIR$/jk_web/src/test/test.iml" />
     </modules>
   </component>
 </project>
